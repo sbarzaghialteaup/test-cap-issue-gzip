@@ -1,0 +1,18 @@
+
+### GET RECORDS
+GET http://localhost:4004/catalog/EtAcdoca
+
+
+### 1° POST odata with compressed payload, it's ok
+POST http://localhost:4004/catalog/createRecords
+Content-Type: application/json
+
+< ./test.json
+
+
+### 2° POST odata with compressed payload, error payload not inflated
+POST http://localhost:4004/catalog/createRecords
+Content-Type: application/json
+Content-Encoding: gzip
+
+< ./test.json.gz
