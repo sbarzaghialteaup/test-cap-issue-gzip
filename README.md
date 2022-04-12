@@ -30,3 +30,7 @@ The payload of the action is not inflated, error:
 - clone this repo
 - `cds watch`
 - run the 2° post request in file `test.http`
+
+## Workaround
+
+Serve as REST service, try to run the 4° post request in file `test.http`

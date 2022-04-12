@@ -16,3 +16,18 @@ Content-Type: application/json
 Content-Encoding: gzip
 
 < ./test.json.gz
+
+
+### 3° POST as REST with compressed payload, it's ok
+POST http://localhost:4004/rest/createRecords
+Content-Type: application/json
+
+< ./test.json
+
+
+### 4° POST as REST with compressed payload, it's ok
+POST http://localhost:4004/rest/createRecords
+Content-Type: application/json
+Content-Encoding: gzip
+
+< ./test.json.gz
