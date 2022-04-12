@@ -33,4 +33,4 @@ The payload of the action is not inflated, error:
 
 ## Workaround
 
-Serve as REST service, try to run the 4° post request in file `test.http`
+Serve as REST service, look in `srv/server.js`, try to run the 4° post request in file `test.http`
